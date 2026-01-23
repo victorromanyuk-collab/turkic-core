@@ -1,0 +1,54 @@
+# SwiftLint Configuration for turkic.core
+
+disabled_rules:
+  - trailing_whitespace
+  - line_length
+  - function_body_length
+  - type_body_length
+  - file_length
+  - cyclomatic_complexity
+
+opt_in_rules:
+  - empty_count
+  - closure_spacing
+  - explicit_init
+  - first_where
+  - toggle_bool
+
+excluded:
+  - Pods
+  - DerivedData
+  - .build
+  - Packages
+
+identifier_name:
+  min_length:
+    warning: 1
+    error: 1
+  max_length:
+    warning: 60
+    error: 80
+  excluded:
+    - id
+    - ru
+    - en
+    - kk
+    - tr
+    - uz
+    - ky
+    - tt
+    - az
+    - i
+    - j
+    - x
+    - y
+
+type_name:
+  min_length: 3
+  max_length: 50
+
+nesting:
+  type_level: 3
+  function_level: 5
+
+reporter: "xcode"
